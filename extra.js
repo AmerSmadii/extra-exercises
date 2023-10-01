@@ -91,3 +91,56 @@ switch (num4) {
         window.alert("PLEASE TRY AGAIN");
         break;
 }
+
+//Q7
+for (let i = 0; i <= 5; i++){
+    window.alert(i);
+}
+
+//Q8
+let numbers1 = "";
+for (let i = 0; i <= 5; i++){
+    numbers1 += i;
+}
+window.alert(numbers1);
+
+//Q9
+let numbers2 = "";
+for (let i = 0; i <= 20; i++){
+    numbers2 += i3;
+}
+window.alert(numbers2);
+
+//Q10
+let pick = window.prompt("pick a number between 0 and 100", "");
+while (0 > pick || pick > 100){
+    console.log("please pick a number between 0 and 100");
+    pick = window.prompt("pick a number between 0 and 100", "");
+}
+
+//Q11
+let something = window.prompt("enter somthing", "");
+let som1 = "";
+if (isNaN(something)){
+    for (let i = something.length-1; i >= 0 ; i--){
+        som1 = som1 + something.charAt(i);
+    }
+}
+window.alert(som1);
+
+//Q12
+let number3 = window.prompt("(Q12) pick an integer", "") 1;
+let numSum = 0;
+for (let i = 1; i <= number3; i++){
+    numSum += i;
+}
+window.alert(numSum);
+
+//Q13
+let ssum = 0;
+let pick2 = window.prompt("(q13) pick for an average","") * 1;
+for (let i = 1; i <= pick2; i++){
+    ssum += i;
+}
+let average = ssum / (pick2 + 1) ;
+window.alert(average);
